@@ -159,6 +159,10 @@ void DrawInfo()
 // renderowanie grafiki
 void display()
 {
+	ghosts[0]->moving = true;
+	ghosts[1]->moving = true;
+	ghosts[2]->moving = true;
+	ghosts[3]->moving = true;
 	//std::cout << "render" << std::endl;
 	float orthoOffset = 2.0f;
 
