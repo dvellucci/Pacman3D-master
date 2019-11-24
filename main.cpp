@@ -186,10 +186,6 @@ void display()
 		glLightfv(GL_LIGHT0, GL_POSITION, lightPos0);
 	glPopMatrix();
 
-	// camera movement stuff:
-	// http://gamedev.stackexchange.com/questions/43588/how-to-rotate-camera-centered-around-the-cameras-position
-	// M_PI /2 - przesuniecie fazowe w celu dobrego wyswietlenia poczatkowego planszy
-	// implementacja operacji: ROLL (theta) (zla!) oraz PITCH (phi) ('w', 's' jest ok)
 	if (pacFollowed) 
 	{ // look at pacman 
 		centerX = pacman->x;
